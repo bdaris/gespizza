@@ -1,0 +1,30 @@
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+button {
+  margin-top: 150px;
+  font-family: Arial;
+  background-color: #b2c6fe;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }

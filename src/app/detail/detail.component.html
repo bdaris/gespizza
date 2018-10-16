@@ -1,0 +1,9 @@
+<div *ngIf="pizza">
+  <h1>Details Pizzas</h1> <br /><br />
+  <div><img src="{{pizza.url}}"></div>
+  <div>
+    <label> Nom: {{pizza.name | uppercase}} </label> <br />
+    <label> Prix: {{pizza.price}} € </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
