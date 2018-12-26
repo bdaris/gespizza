@@ -1,9 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontpizza": {
+    "lpa2": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +12,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontpizza",
+            "outputPath": "dist/lpa2",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "frontpizza:build"
+            "browserTarget": "lpa2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "frontpizza:build:production"
+              "browserTarget": "lpa2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontpizza:build"
+            "browserTarget": "lpa2:build"
           }
         },
         "test": {
@@ -96,7 +95,7 @@
         }
       }
     },
-    "frontpizza-e2e": {
+    "lpa2-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -104,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "frontpizza:serve"
+            "devServerTarget": "lpa2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "frontpizza:serve:production"
+              "devServerTarget": "lpa2:serve:production"
             }
           }
         },
@@ -124,5 +123,7 @@
       }
     }
   },
-  "defaultProject": "frontpizza"
+  "version": 1
+},
+  "defaultProject": "lpa2a"
 }

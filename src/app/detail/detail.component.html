@@ -1,9 +1,16 @@
-<div *ngIf="pizza">
-  <h1>Details Pizzas</h1> <br /><br />
-  <div><img src="{{pizza.url}}"></div>
-  <div>
-    <label> Nom: {{pizza.name | uppercase}} </label> <br />
-    <label> Prix: {{pizza.price}} € </label>
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <img [src]="pizza.url" alt="">
   </div>
-  <button (click)="goBack()">go back</button>
+</div>
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <h1>{{pizza.name}}</h1>
+  </div>
+</div>
+<div class="row" *ngIf="pizza">
+  <div class="col">
+    <p>{{pizza.price}}</p>
+    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+  </div>
 </div>

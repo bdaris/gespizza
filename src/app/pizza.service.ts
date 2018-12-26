@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Pizza } from './pizza';
 
-@Injectable({ providedIn: 'root' })
-
-export class PizzaService
-{
+@Injectable({
+  providedIn: 'root'
+})
+export class PizzaService {
 
   URL = "https://lpa2sgadot.herokuapp.com"
 
@@ -17,8 +17,6 @@ export class PizzaService
   }
 
   public getPizza(id: number): Observable<Pizza> {
-    return this.httpclient.get<Pizza>(this.URL + '/pizzas/'+id+'.json')
-  } 
-
-
+    return this.httpclient.get<Pizza>(this.URL + `/pizzas/${id}.json`)
+  }
 }
